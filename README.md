@@ -2,12 +2,12 @@
 
 Este repositorio contiene soluciones trabajadas **a partir del ejemplo de gramática** que aparece en la presentación (función `A()` y `emparejar(...)`), donde los *tokens* usados son `UNO`, `DOS`, `TRES`, `CUATRO` y se observa un descenso recursivo.
 
-> **Gramática base (consistente con el código de la diapositiva):**
+> **Gramática base:**
 >
 > A → B UNO | DOS  
 > B → TRES | CUATRO
 
-> Intuición a partir del pseudocódigo visto: si el *token* inicial es `TRES` o `CUATRO`, se llama `B()` y luego se empareja `UNO`; si el *token* inicial es `DOS`, se empareja `DOS`; en cualquier otro caso hay error de sintaxis. Eso corresponde exactamente a la gramática anterior.
+> si el *token* inicial es `TRES` o `CUATRO`, se llama `B()` y luego se empareja `UNO`; si el *token* inicial es `DOS`, se empareja `DOS`; en cualquier otro caso hay error de sintaxis. Eso corresponde exactamente a la gramática anterior.
 
 Contenido:
 - `solutions/ex1_first_follow.md`: **Ejercicio 1** – Cálculo detallado de conjuntos **FIRST** y **FOLLOW**.
